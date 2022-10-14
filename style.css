@@ -1,0 +1,1384 @@
+:root{
+    --primarycolor: #ff274d;
+    --secondarycolor: #f7bcf7;
+    --lightcolor: #ffffff;
+    --bgcolor-1: #171a1c;
+    --bgcolor-2: #22282a;
+    --padding: 8%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    font-family: sans-serif, cursive, system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;
+}
+h1{
+    font-size: 50px;
+    margin-left: -5.4px;
+}
+h3{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+h4{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--secondarycolor);
+}
+span{
+    color: var(--primarycolor);
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor-1);
+    overflow: hidden;
+    position: relative;
+}
+h2{
+    color: white;
+    font-size: 35.2px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+nav{
+    padding-top: 18px;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 90px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--lightcolor);
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: var(--primarycolor);
+    transition: 0.4s;
+}
+.btn{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--lightcolor);
+    background-color: var(--primarycolor);
+    border-radius: 30px ;
+    padding: 8px 12px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+.btn:hover, .btn-content:hover{
+    background-color: transparent;
+    border: 2px solid var(--primarycolor);
+}
+.btn-content{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--lightcolor);
+    background-color: var(--primarycolor);
+    border-radius: 30px ;
+    padding: 8px 12px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+.content{
+    flex-grow: 1;
+    width: 100%;
+    padding: 0 var(--padding);
+    color: var(--lightcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+    margin-top: 15px;
+}
+.social img{
+    text-decoration: none;
+}
+.social img{
+    margin-right: 20px;
+    width: 30px;
+    transition: 0.4s;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+.content .image{
+    width: 100%;
+}
+.content .image .ai{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    top: 19%;
+    height: 90%;
+    left: 26%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.content .image .ai:hover{
+    transform: translateY(-20px);
+}
+.content .image .man{
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.content .image .man:hover{
+    transform: translateX(-40px);
+}
+
+/*-------------About-----------
+-------------------------------
+-------------------------------
+-------------------------------*/
+
+
+.about-me{
+    background: var(--bgcolor-2);
+    width: 100%;
+}
+.about{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about img{
+    width: 35%;
+    margin: 25px;
+    margin-bottom: 25px;
+}
+.about .container-text{
+    width: 45%;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+.about h2{
+    margin-top: -60px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 45px;
+}
+.about .container-text h4{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.about .container-text p{
+    color: var(--secondarycolor);
+    margin-right: 40px;
+}
+
+
+
+
+/*-------------services--------
+-------------------------------
+-------------------------------
+-------------------------------*/
+
+.cards{
+    background: var(--bgcolor-1);
+}
+.cards h2{
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 45px;
+}
+.cards .card{
+    background: var(--bgcolor-2);
+    width: 340px;
+    height: 100%;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+#lancer{
+    height: 40vh;
+}
+.cards .card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    text-align: center;
+}
+.icon i{
+    font-size: 40px;
+    color: var(--primarycolor);
+}
+.icon img{
+    width: 43px;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: var(--lightcolor);
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 10px;   
+}
+.info p{
+    color: var(--secondarycolor);
+    width: 90%;
+    margin: auto;
+}
+
+/*-------------portfolio-------
+-------------------------------
+-------------------------------
+-------------------------------*/
+
+
+.portfolio{
+    background: var(--bgcolor-2);
+    position: relative;
+}
+.portfolio h2{
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 45px;
+    font-family: sans-serif;
+    font-size: 45px;
+    text-transform: capitalize;
+}
+.btn-port {
+    text-decoration: none;
+    color: #fff;
+    background: var(--primarycolor);
+    border-radius: 30px;
+    padding: 8px 12px;
+    font-weight: bold;
+    border: 2px solid var(--primarycolor);
+    transition: 0.4s;
+}
+.btn-port:hover {
+    background: transparent;
+}
+.btn-porject{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    background: var(--primarycolor);
+    border-radius: 30px;
+    padding: 8px 12px;
+    font-weight: bold;
+    border: 2px solid var(--primarycolor);
+    transition: 0.4s;
+}
+.btn-porject:hover {
+    background: transparent;
+}
+.all-port{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-bottom: 58px;
+}
+.information{
+    overflow: hidden;
+    position: relative;
+    margin: 0 22px;
+    margin-bottom: 25px;
+}
+.information img{
+    border-radius: 15px;
+    width: 350px;
+    height: 191.65px;
+    transition: 0.4s;
+}
+.information .caption{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 350px;
+    opacity: 0;
+    border-radius: 15px;
+    height: 98.1%;
+    background: rgba(0, 0, 0, 0.69);
+    transition: 0.5s;
+    text-align: center;
+}
+.information .caption .content{
+    flex-direction: column;
+    position: relative;
+    top: 20%;
+    color: #fff
+}
+.information .caption .content h4{
+    margin-top: -100px;
+    color: #fff;
+    text-align: center;
+    font-size: 23px;
+    transition: 0.4s;
+}
+.information .caption:hover h4{
+    margin-top: -10px;
+}
+.information .caption .content .btn-port{
+    text-decoration: none;
+    background: #ff274d;
+    border-radius: 20px;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 20px;
+    margin-top: 300px;
+    font-weight: 700;
+    border: 2px solid #ff274d;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+.information .caption:hover .btn-port{
+    margin-top: 35px;
+}
+.information .caption .content .btn-port:hover {
+    background: transparent;
+    
+}
+.information .caption:hover{
+    opacity: 100%;
+}
+
+
+/*-------------skills----------
+-------------------------------
+-------------------------------
+-------------------------------*/
+
+
+.skills{
+    background: var(--bgcolor-1);
+}
+.all{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+}
+.skills h3{
+    color: #fff;
+    padding-top: -200px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-transform: capitalize;
+} 
+.container-skills{
+    width: 50%;
+}
+.container-skills i{
+    font-size: 40px;
+    text-decoration: none;
+    background: var(--lightcolor);
+    color: rgb(230, 64, 64);
+    border-radius: 100px;
+    padding: 15px 15px;
+    cursor: pointer;
+    margin: 0 15px;
+    opacity: 70%;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+.container-skills i:hover, .container-skills img:hover{
+    opacity: 100%;
+}
+.image-skills{
+    width: 30%;
+}
+.image-skills img{
+    width: 330px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+
+
+/*-------------contact---------
+-------------------------------
+-------------------------------
+-------------------------------*/
+
+.contact{
+    background: var(--bgcolor-2);
+}
+.footer{
+    width: 70%;
+    margin: auto;
+}
+.footer h2{
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 45px;
+    font-family: sans-serif;
+    font-size: 45px;
+    text-transform: capitalize;
+}
+.my-contact{
+    display: flex;
+    justify-content: space-between;
+}
+.my-contact i{
+    font-size: 40px;
+    color: var(--primarycolor);
+    margin-bottom: 10px;
+}
+.left-footer{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left: -40px;
+}
+.left-footer a{
+    text-decoration: none;
+    color: var(--secondarycolor);
+}
+.mid-footer{
+    text-align: center;
+}
+.right-footer{
+    text-align: center;   
+}
+h4{
+    color: var(--secondarycolor);
+}
+.right-footer h4{
+    font-size: 15px;
+}
+.last{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.last h5{
+    color: #fff;
+    opacity: 70%;
+}
+.last h5 a{
+    text-decoration: none;
+    color: #ff274d;
+}
+.last-image a{
+    margin-right: 6px;
+    opacity: 60%;
+    transition: 0.4s;
+}
+.last-image a:hover{
+    opacity: 100%;
+}
+
+#menu{
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+    top: 3.1%;
+}
+#menu span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: var(--lightcolor);
+    border-radius: 6px;
+    margin-bottom: 5px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+
+#menu.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg); 
+}
+#menu.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translateX(15px);
+}
+#menu.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg); 
+}
+#menu.is-active span{
+    background-color: var(--primarycolor);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 909px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        background: var(--bgcolor-2);
+        border-bottom: 1px solid var(--bgcolor-2);
+        padding-top: 0;
+        z-index: 100;
+    }
+    .content .image, .btn{
+        display: none;
+    }  
+    nav h2{
+        font-size: 30px;
+    }
+    nav ul{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bgcolor-2);
+    }
+    nav ul.is-active{
+        display: block;
+    }
+    nav ul li{
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+    }
+    .content .container-text{
+        margin-left: 11px;
+        margin-right: auto;
+        margin-top: 90px;
+    }
+    .social{
+        margin-top: 50px;
+    }
+    .social img{
+        margin-right: 30px;
+        width: 35px;
+    }
+    h1{
+        font-size: 44px;
+    }
+    h3{
+        margin-top: 15px;
+    }
+    #menu{
+        display: block;
+    }
+    .about img{
+        display: none;
+    }
+    .about .container-text{
+        width: 80%;
+        margin-bottom: 30px;    
+    }
+    .about h2{
+        margin-top: 0;
+    }
+    .content{
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+    .cards .card{
+        margin-bottom: 20px;
+        margin-left: 22.5px;
+        height: 100%;
+    }
+    .cards h2{
+        margin-bottom: 40px;
+   
+    }
+    .portfolio h2{
+        margin-bottom: 50px;
+    }
+    #lancer {
+        height: 33vh;
+    }    
+    .none{
+        display: none;
+    }
+    .ss{
+        margin-left: 525px;
+    }
+    .all-port{
+        justify-content: center;
+    }
+    .image-skills{
+        display: none;
+    }
+    .skills h3{
+        margin-top: 40px;
+        margin-bottom: 27px;
+        text-align: center;
+        margin-left: auto;
+    }
+    .container-skills{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container-skills i{
+        margin-right: 18px;
+        margin-left: 4px;
+    }
+    .navbar{
+        display: flex;
+    }
+    .icons-skills{
+        padding-left: 35px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        background: var(--bgcolor-2);
+        border-bottom: 1px solid var(--bgcolor-2);
+        padding-top: 0;
+        z-index: 100;
+    }
+    .content .image, .btn{
+        display: none;
+    }  
+    nav h2{
+        font-size: 30px;
+    }
+    nav ul{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bgcolor-2);
+    }
+    nav ul.is-active{
+        display: block;
+    }
+    nav ul li{
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+    }
+    .content .container-text{
+        margin-left: 11px;
+        margin-right: auto;
+        margin-top: 90px;
+    }
+    .social{
+        margin-top: 50px;
+    }
+    .social img{
+        margin-right: 30px;
+        width: 35px;
+    }
+    h1{
+        font-size: 44px;
+    }
+    h3{
+        margin-top: 15px;
+    }
+    #menu{
+        display: block;
+    }
+    .about img{
+        display: none;
+    }
+    .about .container-text{
+        width: 100%;
+        margin-bottom: 25px;    
+    }
+    .about h2{
+        margin-top: 0;
+    }
+    .content{
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+    .cards .card{
+        margin-bottom: 20px;
+        margin-left: 22.5px;
+        height: 100%;
+    }
+    .cards h2{
+        margin-bottom: 40px;
+   
+    }
+    #lancer {
+        height: 33vh;
+    }    
+    .portfolio h2{
+        margin-bottom: 50px;
+    }
+    .none{
+        display: none;
+    }
+    .all-port{
+        justify-content: center;
+    }
+    .image-skills{
+        display: none;
+    }
+    .skills h3{
+        margin-top: 40px;
+        margin-bottom: 27px;
+        text-align: center;
+        margin-left: auto;
+    }
+    .container-skills{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container-skills i{
+        margin-right: 18px;
+        margin-left: 4px;
+    }
+    .navbar{
+        display: flex;
+    }
+    .icons-skills{
+        padding-left: 35px;
+    }
+    .my-contact{
+        display: inline;
+    }
+    .left-footer{
+    text-align: center;
+    margin-bottom: 35px;
+    margin-left: -1px;
+    }
+    .mid-footer{
+    text-align: center;
+    margin-bottom: 35px;
+    }
+    .right-footer{
+    text-align: center;
+    margin-bottom: 35px;
+    }
+    .last{
+        display: inline;
+        text-align: center;
+    }
+    .last h5{
+        margin: 11px 0;
+    }
+    .last-image a{
+        margin: 0 10px;
+    }
+    .ss{
+        margin-left: 325px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        background: var(--bgcolor-2);
+        border-bottom: 1px solid var(--bgcolor-2);
+        padding-top: 0;
+        z-index: 100;
+    }
+    .content .image, .btn{
+        display: none;
+    }  
+    nav h2{
+        font-size: 30px;
+    }
+    nav ul{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bgcolor-2);
+    }
+    nav ul.is-active{
+        display: block;
+    }
+    nav ul li{
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+    }
+    .content .container-text{
+        margin-left: 11px;
+        margin-right: auto;
+        margin-top: -39px;
+    }
+    .social{
+        margin-top: 50px;
+    }
+    .social img{
+        margin-right: 30px;
+        width: 35px;
+    }
+    h1{
+        font-size: 44px;
+    }
+    h3{
+        margin-top: 15px;
+        margin-bottom: 36px;
+    }
+    #menu{
+        display: block;
+    }
+    .about img{
+        display: none;
+    }
+    .about .container-text{
+        width: 100%;
+        margin-bottom: 25px;    
+    }
+    .about h2{
+        margin-top: 0;
+    }
+    .content{
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+    .cards .card{
+        margin-bottom: 20px;
+        margin-left: 22.5px;
+        height: 100%;
+    }
+    .cards h2{
+        margin-bottom: 40px;
+   
+    }
+    .portfolio h2{
+        margin-bottom: 50px;
+    }
+    .information img {
+        width: 322px;
+    }
+    #lancer {
+        height: 33vh;
+    }    
+    .none{
+        display: none;
+    }
+    .all-port{
+        justify-content: center;
+    }
+    .image-skills{
+        display: none;
+    }
+    .skills h3{
+        margin-top: 40px;
+        margin-bottom: 27px;
+        text-align: center;
+        margin-left: auto;
+    }
+    .container-skills{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container-skills i{
+        margin-right: 18px;
+        margin-left: 4px;
+    }
+    .my-contact{
+        display: inline;
+    }
+    .left-footer{
+        text-align: center;
+        margin-bottom: 35px;
+        margin-left: -1px;
+    }
+    .mid-footer{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .right-footer{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .last{
+        display: inline;
+        text-align: center;
+    }
+    .last h5{
+        margin: 11px 0;
+    }
+    .last-image a{
+        margin: 0 10px;
+    }
+    .navbar{
+        display: flex;
+    }
+    .icons-skills{
+        padding-left: 35px;
+    }
+    .ss{
+        margin-left: 325px;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        background: var(--bgcolor-2);
+        border-bottom: 1px solid var(--bgcolor-2);
+        padding-top: 0;
+        z-index: 100;
+    }
+    .btn{
+        display: none;
+    }  
+    .image{
+        display: block;
+    }
+    .content .image .man{
+        width: 33%;
+        position: absolute;
+        bottom: 0;
+        right: 14%;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    .content .image .ai{
+        top: 24%;
+        left: 31%;
+    }
+    nav h2{
+        font-size: 30px;
+    }
+    nav ul{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bgcolor-2);
+    }
+    nav ul.is-active{
+        display: block;
+    }
+    nav ul li{
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+    }
+    .content .container-text{
+        margin-left: 11px;
+        margin-right: auto;
+        margin-top: 123px;
+    }
+    .social{
+        margin-top: 23px;
+    }
+    .social img{
+        margin-right: 30px;
+        width: 35px;
+    }
+    h1{
+        font-size: 44px;
+    }
+    h3{
+        margin-top: 15px;
+        margin-bottom: 36px;
+    }
+    #menu{
+        display: block;
+    }
+    .about img{
+        width: 37%;
+    }
+    .about .container-text{
+        width: 53%;
+        margin-bottom: 30px; 
+
+    }
+    .about h2{
+        margin-top: 0;
+    }
+    .content{
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+    .cards .card{
+        margin-bottom: 20px;
+        margin-left: 22.5px;
+        height: 100%;
+    }
+    .cards h2{
+        margin-bottom: 40px;
+   
+    }
+    .portfolio h2{
+        margin-bottom: 50px;
+    }
+    .none{
+        display: none;
+    }
+    .ss{
+        margin-left: 525px;
+    }
+    .all-port{
+        justify-content: center;
+    }
+    .image-skills{
+        display: none;
+    }
+    #lancer {
+        height: 32vh;
+    }
+    .skills h3{
+        margin-top: 40px;
+        margin-bottom: 27px;
+        text-align: center;
+        margin-left: auto;
+    }
+    .container-skills{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container-skills i{
+        margin-right: 18px;
+        margin-left: 4px;
+    }
+    .navbar{
+        display: flex;
+    }
+    .icons-skills{
+        padding-left: 35px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1250px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        background: var(--bgcolor-2);
+        border-bottom: 1px solid var(--bgcolor-2);
+        padding-top: 0;
+        z-index: 100;
+    }
+    .btn{
+        display: none;
+    }  
+    .image{
+        display: block;
+    }
+    .content .image .man{
+        width: 28%;
+        position: absolute;
+        bottom: 0;
+        right: 14%;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    .content .image .ai{
+        height: 82vh;
+        top: 29%;
+        left: 35%;
+    }
+    nav h2{
+        font-size: 30px;
+    }
+    nav ul{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bgcolor-2);
+    }
+    nav ul.is-active{
+        display: block;
+    }
+    nav ul li{
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+    }
+    .content .container-text{
+        margin-left: 11px;
+        margin-right: auto;
+        margin-top: 123px;
+    }
+    .social{
+        margin-top: 23px;
+    }
+    .social img{
+        margin-right: 30px;
+        width: 35px;
+    }
+    h1{
+        font-size: 44px;
+    }
+    h3{
+        margin-top: 15px;
+        margin-bottom: 36px;
+    }
+    #menu{
+        display: block;
+    }
+    .about img{
+        width: 37%;
+    }
+    .about .container-text{
+        width: 53%;
+        margin-bottom: 30px; 
+
+    }
+    .about h2{
+        margin-top: 0;
+    }
+    .content{
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+    .cards .card{
+        margin-bottom: 20px;
+        margin-left: 22.5px;
+        height: 100%;
+    }
+    .cards h2{
+        margin-bottom: 40px;
+   
+    }
+    .portfolio h2{
+        margin-bottom: 50px;
+    }
+    .none{
+        display: none;
+    }
+    .ss{
+        margin-left: 525px;
+    }
+    .all-port{
+        justify-content: center;
+    }
+    .image-skills{
+        display: none;
+    }
+    #lancer {
+        height: 32.4vh;
+    }
+    .skills h3{
+        margin-top: 40px;
+        margin-bottom: 27px;
+        text-align: center;
+        margin-left: auto;
+    }
+    .container-skills{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container-skills i{
+        margin-right: 18px;
+        margin-left: 4px;
+    }
+    .navbar{
+        display: flex;
+    }
+    .icons-skills{
+        padding-left: 35px;
+    }
+}
+@media screen and (min-width: 910px) and (max-width: 1100px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        background: var(--bgcolor-2);
+        border-bottom: 1px solid var(--bgcolor-2);
+        padding-top: 0;
+        z-index: 100;
+    }
+    .btn{
+        display: none;
+    }  
+    .image{
+        display: block;
+    }
+    .content .image .man{
+        width: 35%;
+        position: absolute;
+        bottom: 0;
+        right: 11%;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    .content .image .ai{
+        top: 26%;
+        width: 100%;
+        left: 26%;
+    }
+    nav h2{
+        font-size: 30px;
+    }
+    nav ul{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bgcolor-2);
+    }
+    nav ul.is-active{
+        display: block;
+    }
+    nav ul li{
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+    }
+    .content .container-text{
+        margin-left: 11px;
+        margin-right: auto;
+        margin-top: 123px;
+    }
+    .social{
+        margin-top: 23px;
+    }
+    .social img{
+        margin-right: 30px;
+        width: 35px;
+    }
+    h1{
+        font-size: 44px;
+    }
+    h3{
+        margin-top: 15px;
+        margin-bottom: 36px;
+    }
+    #menu{
+        display: block;
+    }
+    .about img{
+        width: 37%;
+    }
+    .about .container-text{
+        width: 53%;
+        margin-bottom: 30px; 
+
+    }
+    .about h2{
+        margin-top: 0;
+    }
+    .content{
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+    .cards .card{
+        margin-bottom: 20px;
+        margin-left: 22.5px;
+        height: 100%;
+    }
+    .cards h2{
+        margin-bottom: 40px;
+   
+    }
+    .portfolio h2{
+        margin-bottom: 50px;
+    }
+    .none{
+        display: none;
+    }
+    .ss{
+        margin-left: 525px;
+    }
+    .all-port{
+        justify-content: center;
+    }
+    .image-skills{
+        display: none;
+    }
+    #lancer {
+        height: 32vh;
+    }
+    .skills h3{
+        margin-top: 40px;
+        margin-bottom: 27px;
+        text-align: center;
+        margin-left: auto;
+    }
+    .container-skills{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container-skills i{
+        margin-right: 18px;
+        margin-left: 4px;
+    }
+    .navbar{
+        display: flex;
+    }
+    .icons-skills{
+        padding-left: 35px;
+    }
+}
